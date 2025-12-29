@@ -41,7 +41,7 @@ class build_ext(build_ext_orig):
     def run(self):
         for ext in self.extensions:
             self.build_cmake(ext)
-        super().run()
+        #super().run()
 
     def build_cmake(self, ext):
         cwd = pathlib.Path().absolute()
